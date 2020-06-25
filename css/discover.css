@@ -1,0 +1,167 @@
+.discover-main-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+}
+
+.title{
+  margin: auto;
+  padding: 1em;
+  text-align: center;
+}
+
+.subtitle{
+  margin: auto;
+  padding: 1em;
+  text-align: center;
+}
+
+.covers-image {
+  display: flex;
+  justify-content: center;
+  padding: 2em;
+}
+
+.covers-image img{
+  width: 30vw;
+  height: auto;
+  outline: solid;
+  margin-bottom: 2em;
+  margin-right: 2em;
+}
+
+.icon-section {
+  display: flex;
+  justify-content: center;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: .5rem;
+  padding: .75rem;
+  width: 100px;
+  height: 100px;
+  background-color: #202027;
+  margin-bottom: 2rem;
+}
+
+.icon img {
+  width: 40px;
+}
+
+@media all and (max-width: 800px) {
+  .discover-main-section {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .covers-image img{
+    margin: auto;
+    width: 28vw;
+  }
+  
+  .discover-main-section .covers-image {
+    margin-top: 2rem;
+    height: 30vh;
+    width: auto;
+  }
+
+  .brand-logo-name {
+    display: none !important;
+  }
+
+  .main-nav button{
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    z-index: 100;
+    font-size: small;
+}
+
+  .main-nav ul{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #393e46;
+    position: fixed;
+    top: 120px;
+    z-index: 100;
+  } 
+
+  .main-nav .main-menu li a{
+    border-bottom: 1px solid white;
+    text-align: center;
+  }
+
+  .main-footer{
+    justify-content: center;
+    align-items: center;
+  }
+
+  .covers-image{
+    margin-bottom: 4em;
+  }
+}
+
+@media all and (max-width: 600px) { 
+  .main-footer{
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title, .subtitle{
+    text-align: center;
+  }
+
+}
+
+@media all and (max-width: 500px){
+  .covers-image img{
+    width: 40vw;
+  }
+
+  .title{
+    font-size: xx-large;
+    margin-top: 2em;
+  }
+
+  .subtitle{
+    font-size: x-large;
+  }
+
+  #main-footer ul{
+    margin: auto;
+    padding-left: 20px;
+  }
+
+  #main-footer ul li a{
+    text-align: center;
+  }
+
+  #footer ul li a{
+    display: none !important;
+  }
+
+  .social-networks{
+    display: block;
+    position: fixed;
+    bottom: 80px;
+    right: 0;
+    z-index: 100;
+    background-color: #171717;
+    padding: 8px;
+    border: 1px solid white;
+    border-radius: 8px;
+  }
+
+  .social-networks .social-media{
+    color: white;
+    font-size: x-large;
+  }
+}

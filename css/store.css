@@ -1,0 +1,253 @@
+.section-header{
+    margin: auto;
+    padding-left: 1em;
+}
+
+.shop-item {
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shop-item-title {
+    display: block;
+    width: 50%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.shop-item-image {
+    height: 10rem;
+    width: 10rem;
+    margin-bottom: 10px;
+    outline: solid;
+    outline-color: grey;
+}
+
+.shop-item-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+}
+
+.shop-item-price {
+    flex-grow: 1;
+    color: #fff;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.shop-items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap;
+}
+
+.cart-header {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #fff;
+}
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #fff;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+    padding-left: 2.5em;
+    margin: auto;
+}
+
+.cart-item {
+    width: 45%;
+}
+
+.cart-price {
+    width: 20%;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.cart-quantity {
+    width: 35%;
+}
+
+.cart-item-title {
+    color: #fff;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cart-item-image {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btn-danger {
+    color: white !important;
+    border: none !important;
+    background-color: #d92027 !important;
+    border-radius: .3em !important;
+}
+
+.btn-danger:hover {
+    background-color: #ff5722 !important;
+}
+
+.cart-quantity-input {
+    height: 30px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #202027;
+    background-color: #eee;
+    color: #000;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child {
+    border-bottom: 1px solid #fff;
+}
+
+.cart-row:last-child .cart-column {
+    border: none;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 40px;
+}
+
+.cart-total-title {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #fff;
+    margin-right: 20px;
+}
+
+.cart-total-price {
+    color: #fff;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.5em;
+}
+
+@media all and (max-width: 800px) {
+    .brand-logo-name{
+        display: none !important;
+      }
+    
+      .main-nav button{
+        display: block;
+        position: absolute;
+        top: 40px;
+        right: 0;
+        z-index: 100;
+        font-size: small;
+    }
+    
+      .main-nav ul{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background-color: #393e46;
+        position: fixed;
+        top: 120px;
+        z-index: 100;
+      } 
+    
+      .main-nav .main-menu li a{
+        border-bottom: 1px solid white;
+        text-align: center;
+      }
+    }
+@media all and (max-width: 600px) {
+    .shop-item-details .btn{
+        font-size: large !important;
+    }
+
+    .cart-item-image{
+        display: none;
+    }
+
+    .btn-danger{
+        font-size: medium !important;
+        margin-right: 1em;
+        padding: .5em;
+    }
+
+    .cart-quantity-input{
+        margin-right: 5px;
+        width: 35px;
+    }
+
+    .cart-column{
+        font-size: smaller;
+    }
+
+    .cart-header{
+        padding-right: 1.5em;
+    }
+
+    .section-header{
+        font-size: larger;
+    }
+
+    .btn.btn-purchase{
+        font-size: larger !important;
+    }
+
+}
+
+@media all and (max-width: 500px) {
+    #main-footer ul{
+        margin: auto;
+        padding-left: 20px;
+      }
+    
+      #main-footer ul li a{
+        text-align: center;
+      }
+    
+      #footer ul li a{
+        display: none !important;
+      }
+    
+      .social-networks{
+        display: block;
+        position: fixed;
+        bottom: 80px;
+        right: 0;
+        z-index: 100;
+        background-color: #171717;
+        padding: 8px;
+        border: 1px solid white;
+        border-radius: 8px;
+      }
+    
+      .social-networks .social-media{
+        color: white;
+        font-size: x-large;
+      }
+    }    

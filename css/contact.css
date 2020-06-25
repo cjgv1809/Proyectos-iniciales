@@ -1,0 +1,67 @@
+form textarea{
+    margin: auto;
+    margin-top: 30px;
+    min-width: 50%;
+    max-width: 50%;
+    width: auto;
+    min-height: 50%;
+    max-height: 70%;
+    height: auto;
+    text-align: justify;
+}
+
+@media all and (max-width: 800px) {
+    .brand-logo-name{
+        display: none !important;
+      }
+    
+      .main-nav button{
+        display: block;
+        position: absolute;
+        top: 40px;
+        right: 0;
+        z-index: 100;
+        font-size: small;
+    }
+    
+      .main-nav ul{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background-color: #393e46;
+        position: fixed;
+        top: 120px;
+        z-index: 100;
+      } 
+    
+      .main-nav .main-menu li a{
+        border-bottom: 1px solid white;
+        text-align: center;
+      }
+
+      .join-form {
+        width: auto;
+        max-width: 90%;
+        max-height: 75%;
+        margin-top: 10em !important;
+        padding: 2em;
+        margin-bottom: 30% !important;
+      }
+    }
+
+@media all and (max-width: 600px){
+    form textarea{
+        margin-top: 20px;
+        min-width: 80%;
+        max-width: 90%;
+        width: auto;
+        min-height: 40%;
+        max-height: 50%;
+        height: auto;
+    }
+
+    h1{
+      font-size: xx-large !important;
+    }
+}

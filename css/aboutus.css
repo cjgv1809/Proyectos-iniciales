@@ -1,0 +1,66 @@
+.carousel-inner .carousel-item img{
+    opacity: .85;
+}
+
+@media all and (max-width: 800px) {
+    .brand-logo-name{
+        display: none !important;
+      }
+    
+      .main-nav button{
+        display: block;
+        position: absolute;
+        top: 40px;
+        right: 0;
+        z-index: 100;
+        font-size: small;
+    }
+    
+      .main-nav ul{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background-color: #393e46;
+        position: fixed;
+        top: 120px;
+        z-index: 100;
+      } 
+    
+      .main-nav .main-menu li a{
+        border-bottom: 1px solid white;
+        text-align: center;
+      }
+
+      .join-form {
+        width: auto;
+        max-width: 90%;
+        max-height: 70%;
+        margin-bottom: 40% !important;
+        padding: 2em;
+        margin-top: 10em !important;
+      }
+
+      .carousel-inner .carousel-item img{
+          width: 50% !important;
+          height: 50% !important;
+      }
+
+      h3{
+        font-size: larger !important;
+      }
+    }
+
+@media all and (max-width: 600px){
+    .carousel{
+        display: none;
+    }
+
+    h1{
+        font-size: xx-large !important;
+    }
+
+    .btn{
+      font-size: large !important;
+    }
+}
