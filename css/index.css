@@ -21,6 +21,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   background-position: bottom left;
+  z-index: 100;
 }
 
 .home-main-section .call-to-action {
