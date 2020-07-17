@@ -111,7 +111,7 @@ body {
 }
 
 .footer-nav ul li a i{
-  font-size: x-large !important;
+  font-size: larger !important;
   color: #fff !important;
   padding-right: .5em;
 }
